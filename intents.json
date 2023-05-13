@@ -1,0 +1,281 @@
+{
+    "intents": [
+        {
+            "tags": "sapa",
+            "patterns": [
+                "hai","hello","halo"
+            ],
+            "responses": [
+                "(sameres) juga, Trasbot disini","halo halo, Trasbot disini","(sameres), ada yang bisa dibantu?","Hai, Trasbot disini"
+            ],
+            "randoms": []
+        },
+        {
+            "tags": "selamat",
+            "patterns": [
+                "selamat pagi","selamat malam","selamat siang","selamat sore","selamat sore menjelang malam"
+            ],
+            "responses": [
+                "(sameres)"
+            ],
+            "randoms": []
+        },
+        {
+            "tags": "salam",
+            "patterns": [
+                "assalamualaikum","assalamu'alaykum","assalamualaikum warahmatullahi wabarakatuh"
+            ],
+            "responses": [
+                "Wa'alaykumussalam Warahmatullahi Wabarakatuh"
+            ],
+            "randoms": []
+        },
+        {
+            "tags": "pengertian",
+            "patterns": [
+                "apa itu traspac makmur sejahtera","apakah perusahaan traspac makmur sejahtera itu","traspac makmur sejahtera itu perusahaan apa","ini perusahaan apa","ini perusahaan apaan","traspac itu apa"
+            ],
+            "responses": [
+                "Perusahaan Traspac Makmur Sejahtera adalah perusahaan yang bergerak di bidang pengembangan aplikasi perangkat lunak dan penyedia jasa layanan ICT. Visi kami adalah Menjadi Perusahaan Solusi Teknologi Informasi yang inovatif dan kokoh dalam pelayanan pelanggan. Kami berdiri sejak tahun 1997 di Surabaya",
+                "Perusahaan Traspac Makmur Sejahtera adalah perusahaan yang bergerak di bidang pengembangan aplikasi perangkat lunak dan penyedia jasa layanan ICT. Kami Berdiri di tahun 1997 di Surabaya dengan visi Menjadi Perusahaan Solusi Teknologi Informasi yang inovatif dan kokoh dalam pelayanan pelanggan",
+                "Perusahaan Traspac Makmur Sejahtera adalah perusahaan yang berdiri pada tahun 1997 di Surabaya yang bergerak di bidang pengembangan aplikasi perangkat lunak dan penyedia jasa layanan ICT. Visi kami adalah Menjadi Perusahaan Solusi Teknologi Informasi yang inovatif dan kokoh dalam pelayanan pelanggan."
+            ],
+            "randoms": []
+        },
+        {
+            "tags": "visi",
+            "patterns": [
+                "apa visi traspac","apa visi perusahaan ini","visi apa dibalik perusahaan ini","apa tujuan diberdirikannya traspac makmur sejahtera","visinya apa","visinya apaan"
+            ],
+            "responses": [
+                "Visi kami adalah Menjadi Perusahaan Solusi Teknologi Informasi yang inovatif dan kokoh dalam pelayanan pelanggan"
+            ],
+            "randoms": []
+        },
+        {
+            "tags": "misi",
+            "patterns": [
+                "apa misi traspac","apa misi perusahaan ini","apa yang dilakukan perusahaan ini untuk mencapai visinya","bagaimana misi traspac","kalo misinya apa","misinya apa"
+            ],
+            "responses": [
+                "Misi kami adalah Memberikan nilai tambah kepada pelanggan, Menjamin kemakmuran jangka panjang kepada karyawan dan stakeholder, Meningkatkan pertumbuhan perusahaan, Menjadi tempat bekerja yang sehat"
+            ],
+            "randoms": []
+        },
+        {
+            "tags": "alasan",
+            "patterns": [
+                "kenapa harus menggunakan jasa traspac makmur sejahtera","apa nilai plus traspac yang membedakan dengan perusahaan lainnya","kenapa harus memilih traspac","kenapa harus menggunakan jasa dan layanan perusahaan ini","memangnya apa yang membuat traspac beda dari yang lain","kenapa saya harus bekerja sama"
+            ],
+            "responses": [
+                "Kami menawarkan Solusi yang Inovatif, Proses yang Efektif, SDM yang Kompeten, dan Pengalaman",
+                "Kami memiliki budaya riset, product vision, proses uji fungsi dan kualitas yang menjadi landasan dalam menciptakan solusi digital yang paling tepat untuk kebutuhan transformasi digital",
+                "Kami memiliki tim yang terdiri dari berbagai ahli di bidangnya, seperti solution architect, project manager, data analyst, UI designer, business analyst, mobile apps expert, web application expert, quality control, dan back end application expert. Traspac juga menerapkan nilai-nilai perusahaan dan manajemen talenta khusus standar organisasi high intens knowledge yang membentuk kesatuan unik setiap TRASer sebagai pribadi dengan integritas, semangat dan profesionalisme yang bisa diandalkan.",
+                "Kami telah berdiri sejak tahun 1997 dan memiliki lebih dari dua puluh tahun konsisten dan berkembang dalam bidang yang sama. Traspac juga telah bekerja sama dengan berbagai pelanggan dari sektor militer, industri, dan pemerintahan"
+            ],
+            "randoms": []
+        },
+        {
+            "tags": "jam",
+            "patterns": [
+                "traspac beroperasi dari jam berapa sampai jam berapa",
+                "traspac makmur sejahtera bekerja dari jam berapa sampai berapa",
+                "jam kerja traspac ada di jam berapa",
+                "dari jam berapa sampai berapa traser bekerja",
+                "jam operasionalnya kapan ya",
+                "jam operasionalnya dari jam berapa sampai berapa"
+            ],
+            "responses": [
+                "Kami beroperasi dari jam 08.00 - 17.00 untuk hari Senin sampai Kamis, dan jam 08.00 - 17.45 untuk hari Jumat",
+                "Jam operasional kami dari jam 08.00 - 17.00 untuk hari Senin sampai Kamis, dan jam 08.00 - 17.45 untuk hari Jumat",
+                "Kami bekerja pada jam 08.00 - 17.00 untuk hari Senin sampai Kamis, dan jam 08.00 - 17.45 untuk hari Jumat"
+            ],
+            "randoms": []
+        },
+        {
+            "tags": "hubungi",
+            "patterns": [
+                "bagaimana cara menghubungi traspac",
+                "bagaimana cara mengajukan kerjasama dengan traspac",
+                "adakah email yang bisa dihubungi",
+                "apa nomor telepon yang bisa dihubungi",
+                "adakah nomor telepon yang bisa dihubungi oleh klien",
+                "bagaimana cara klien menghubungi traspac untuk kerja sama"
+            ],
+            "responses": [
+                "Kamu bisa menghubungi Traspac melalui email info@traspac.co.id atau telepon (021) 31997486",
+                "Kamu bisa menghubungi Kami melalui email info@traspac.co.id atau telepon (021) 31997486",
+                "Email kami ada di info@traspac.co.id dan nomor telepon kami ada di (021) 31997486"
+            ],
+            "randoms": []
+        },
+        {
+            "tags": "produk",
+            "patterns": [
+                "apa saja produknya",
+                "apa produk traspac",
+                "traspac membuat aplikasi apa",
+                "apa yang dibuat traspac",
+                "aplikasi macam apa yang dibuat",
+                "traspac makmur sejahtera membuat aplikasi apa",
+                "produk apa yang dibuat traspac",
+                "apa produk atau layanan traspac",
+                "layanan apa yang ditawarkan traspac makmur sejahtera"
+            ],
+            "responses": [
+                "Produk kami terbagi menjadi beberapa jenis, ada yang untuk Militer, Industri, Pemerintahan, dan juga produk riset kami yang bernama Trasidea"
+            ],
+            "randoms": []
+        },
+        {
+            "tags": "militer",
+            "patterns": [
+                "apa saja contoh produk militer",
+                "apa saja contoh produk di bidang militer",
+                "untuk yang militer contohnya apa",
+                "produk yang militer apa contohnya",
+                "apa contoh produk dalam aspek militer",
+                "apa yang traspac buat untuk militer"
+            ],
+            "responses": [
+                "Berikut adalah beberapa aplikasi yang kami buat dalam bidang militer:",
+                "Berikut contoh layanan kami dalam bidang militer:",
+                "Ini adalah contoh layanan yang kami tawarkan dalam bidang militer:",
+                "Berikut adalah contoh produk yang kami tawarkan pada bisa militer:"
+            ],
+            "randoms": [
+                "Military Human Capital System",
+                "Organization System",
+                "Diplomatic System",
+                "Geostrategic System",
+                "Teritory System",
+                "Integrated Logistic System",
+                "Geospatial System",
+                "Dashboard",
+                "System Interoperability",
+                "Detection System"
+            ]
+        },
+        {
+            "tags": "industri",
+            "patterns": [
+                "apa saja contoh produk industri",
+                "apa saja contoh produk di bidang industri",
+                "untuk yang industri contohnya apa",
+                "produk yang industri apa contohnya",
+                "apa contoh produk dalam aspek industri",
+                "apa yang traspac buat untuk industri"
+            ],
+            "responses": [
+                "Berikut adalah beberapa aplikasi yang kami buat dalam bidang industri:",
+                "Berikut contoh layanan kami dalam bidang industri:",
+                "Ini adalah contoh layanan yang kami tawarkan dalam bidang industri:",
+                "Berikut adalah contoh produk yang kami tawarkan pada bisa industri:"
+            ],
+            "randoms": [
+                "Geospatial System",
+                "Dashboard",
+                "Point Of Sales",
+                "Inventory",
+                "Office Automation",
+                "Dashboard",
+                "Asset Management",
+                "Legal Management System",
+                "Project Management System",
+                "General Affair & Procurement",
+                "Customer Relation Management",
+                "Finance Management"
+            ]
+        },
+        {
+            "tags": "pemerintahan",
+            "patterns": [
+                "apa saja contoh produk pemerintahan",
+                "apa saja contoh produk di bidang pemerintahan",
+                "untuk yang pemerintahan contohnya apa",
+                "produk yang pemerintahan apa contohnya",
+                "apa contoh produk dalam aspek pemerintahan",
+                "apa yang traspac buat untuk pemerintahan"
+            ],
+            "responses": [
+                "Berikut adalah beberapa aplikasi yang kami buat dalam bidang pemerintahan:",
+                "Berikut contoh layanan kami dalam bidang pemerintahan:",
+                "Ini adalah contoh layanan yang kami tawarkan dalam bidang pemerintahan:",
+                "Berikut adalah contoh produk yang kami tawarkan pada bisa pemerintahan:"
+            ],
+            "randoms": [
+                "Human Capital System",
+                "Geospatial System",
+                "Dashboard",
+                "Customer Relationship Management",
+                "Office Automation",
+                "Procurement System",
+                "Asset Management",
+                "Legal Management System",
+                "Project Management System",
+                "Audit System",
+                "Finance Management",
+                "Budgeting System",
+                "Musrenbang System"
+            ]
+        },
+        {
+            "tags": "trasidea",
+            "patterns": [
+                "apa saja contoh produk riset traspac",
+                "apa contoh aplikasi trasidea",
+                "apa saja jenis aplikasi trasidea"
+            ],
+            "responses": [
+                "Berikut adalah beberapa aplikasi trasidea hasil riset kami:",
+                "Berikut contoh layanan trasidea kami:",
+                "Ini adalah contoh produk riset kami:",
+                "Berikut adalah contoh produk yang kami riset:"
+            ],
+            "randoms": [
+                "Trasidea Genograph",
+                "Trasidea QueAnt",
+                "Trasidea Knowman",
+                "Trasidea Apigat",
+                "Trasidea IAM",
+                "Trasidea CMS"
+            ]
+        },
+        {
+            "tags": "lowongan",
+            "patterns": [
+                "saya tertarik untuk join dengan traspac, bagaimana cara mendaftar ke lowongan",
+                "saya ingin mendaftar ke perusahaan ini, bagaimana cara saya mendaftar",
+                "apa syarat syarat yang harus dibawa ketika mendaftar lowongan",
+                "apa syarat yang diperlukan untuk join ke traspac",
+                "saya ingin bergabung, bagaimana caranya",
+                "saya berminat kerja di traspac",
+                "saya mau kerja disini",
+                "bagaimana cara saya untuk mengajukan lowongan disini"
+            ],
+            "responses": [
+                "Kamu bisa langsung klik menu Lowongan di Menu Utama web kami",
+                "Kamu bisa langsung mengunjungi menu Lowongan di Menu Utama kami",
+                "Untuk info lebih lengkap dan detail, kamu bisa mengunjungi menu Lowongan di Menu Utama web kami",
+                "Langsung saja kunjungi laman Lowongan di Menu Utama web kami"
+            ],
+            "randoms": []
+        },
+        {
+            "tags": "terimakasih",
+            "patterns": [
+                "terima kasih ya",
+                "terimakasih ya",
+                "terima kasih atas informasinya",
+                "terima kasih",
+                "terimakasih"
+            ],
+            "responses": [
+                "Sama-sama, kami senang bisa membantu",
+                "Sama-sama, jangan lupa kunjungi kami lagi",
+                "Sama-sama, kami senang menjawab pertanyaan kamu"
+            ],
+            "randoms": []
+        }
+    ]
+}
