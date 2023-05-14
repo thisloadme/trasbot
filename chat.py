@@ -33,7 +33,7 @@ def get_not_understanding_message():
         "Maaf, aku belum mengerti",
         "Maaf, bisa beri aku penjelasan lebih detail?"
     ])
-    return {'tags': None, 'message':message}
+    return {'tags': None, 'message':message, 'random':None}
 
 def get_response(message):
     sentence = tokenize_correct_typo(message, all_words)
@@ -51,12 +51,17 @@ def get_response(message):
     if prob.item() > 0.75:
         for intent in intents['intents']:
             if tag == intent['tags']:
-                return {'tags': tag, 'message':random.choice(intent['responses'])}
+                item_random = None
+                if len(intent['randoms']) > 0:
+                    item_random = random.choices(intent['randoms'], k=5)
+                    item_random = ', '.join(item_random)
+
+                return {'tags': tag, 'message':random.choice(intent['responses']), 'random':item_random}
     else:
         return get_not_understanding_message()
 
 if __name__ == '__main__':
-    print("Tekan quit untuk berhenti chat")
+    print("Halo dengan Trasbot disini, kamu bisa menanyakan kepadaku apapun tentang Traspac.")
     while True:
         message = input('You: ')
         if message == 'quit':
@@ -66,8 +71,9 @@ if __name__ == '__main__':
         resp_tags = resp['tags']
         resp_message = resp['message']
         resp_message = resp_message.replace("(sameres)", message.capitalize())
+        resp_random = resp['random']
         
-        print(bot_name + ': ' + resp_message)
+        print(bot_name + ': ' + resp_message + ' ' + (resp_random if resp_random != None else ''))
         
         if resp_tags == 'terimakasih':
             break

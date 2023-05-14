@@ -45,7 +45,7 @@
         {
             "tags": "visi",
             "patterns": [
-                "apa visi traspac","apa visi perusahaan ini","visi apa dibalik perusahaan ini","apa tujuan diberdirikannya traspac makmur sejahtera","visinya apa","visinya apaan"
+                "apa visi traspac","apa visinya traspac","apa visi perusahaan ini","visi apa dibalik perusahaan ini","apa tujuan diberdirikannya traspac makmur sejahtera","visinya apa","visinya apaan"
             ],
             "responses": [
                 "Visi kami adalah Menjadi Perusahaan Solusi Teknologi Informasi yang inovatif dan kokoh dalam pelayanan pelanggan"
@@ -55,7 +55,7 @@
         {
             "tags": "misi",
             "patterns": [
-                "apa misi traspac","apa misi perusahaan ini","apa yang dilakukan perusahaan ini untuk mencapai visinya","bagaimana misi traspac","kalo misinya apa","misinya apa"
+                "apa misi traspac","apa misinya traspac","apa misi perusahaan ini","apa yang dilakukan perusahaan ini untuk mencapai visinya","bagaimana misi traspac","kalo misinya apa","misinya apa"
             ],
             "responses": [
                 "Misi kami adalah Memberikan nilai tambah kepada pelanggan, Menjamin kemakmuran jangka panjang kepada karyawan dan stakeholder, Meningkatkan pertumbuhan perusahaan, Menjadi tempat bekerja yang sehat"
