@@ -1,5 +1,6 @@
+import os
 import json
-from nltk_utils import tokenize, bag_of_words
+from nlp_utils import tokenize, bag_of_words, remove_stopwords_indo
 import numpy as np
 
 import torch
@@ -8,7 +9,9 @@ from torch.utils.data import Dataset, DataLoader
 
 from model import NeuralNet
 
-with open('intents.json', 'r') as f:
+current_dir = os.getcwd()
+
+with open(current_dir + '/intents.json', 'r') as f:
     intents = json.load(f)
 
 all_words = []
@@ -26,6 +29,7 @@ for intent in intents['intents']:
 
 ignore_words = ['?', '!', '<', '>', '.', ',']
 all_words = [w.lower() for w in all_words if w not in ignore_words]
+all_words = remove_stopwords_indo(all_words)
 all_words = sorted(set(all_words))
 tags = sorted(set(tags))
 
@@ -55,7 +59,7 @@ class ChatDataset(Dataset):
     
 
 batch_size = 8
-hidden_size = 16
+hidden_size = len(X_train[0]) + 8
 output_size = len(tags)
 input_size = len(X_train[0])
 learning_rate = 0.001
@@ -87,7 +91,7 @@ for epoch in range(num_epochs):
         loss.backward()
         optimizer.step()
 
-    if (epoch+1) % 100 == 0:
+    if (epoch+1) % 50 == 0:
         print(f'epoch {epoch+1}/{num_epochs}, loss={loss.item():.4f}')
 
 print(f'final loss={loss.item():.4f}')
@@ -102,7 +106,7 @@ data = {
     "tags": tags
 }
 
-FILE = 'data.pth'
+FILE = current_dir + '/data.pth'
 torch.save(data, FILE)
 
 print(f'training complete')

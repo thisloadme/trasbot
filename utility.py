@@ -1,11 +1,12 @@
 import difflib
-from nltk_utils import tokenize
+from nlp_utils import tokenize, slang_word_meaning
 
 def is_similar(first, second):
     return difflib.SequenceMatcher(None, first, second).ratio() > 0.7
 
-def tokenize_correct_typo(sentence, all_words):
+def tokenize_correct_typo_slang(sentence, all_words):
     words = tokenize(sentence)
+    words = [slang_word_meaning(w) for w in words]
     ignore_words = ['?', '!', '<', '>', '.', ',']
     for (idx, word) in enumerate(words):
         if word not in ignore_words and word not in all_words:

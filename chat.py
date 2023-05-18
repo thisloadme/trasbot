@@ -1,16 +1,18 @@
+import os
 import random
 import json
 import torch
 from model import NeuralNet
-from nltk_utils import bag_of_words, tokenize
-from typo_detector import tokenize_correct_typo
+from nlp_utils import bag_of_words, remove_stopwords_indo
+from utility import tokenize_correct_typo_slang
 
+current_dir = os.getcwd()
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
-with open('intents.json', 'r') as f:
+with open(current_dir + '/intents.json', 'r') as f:
     intents = json.load(f)
 
-FILE = 'data.pth'
+FILE = current_dir + '/data.pth'
 data = torch.load(FILE)
 
 model_state = data['model_state']
@@ -36,8 +38,9 @@ def get_not_understanding_message():
     return {'tags': None, 'message':message, 'random':None}
 
 def get_response(message):
-    sentence = tokenize_correct_typo(message, all_words)
-    X = bag_of_words(sentence, all_words)
+    tokenized_sentence = tokenize_correct_typo_slang(message, all_words)
+    tokenized_sentence = remove_stopwords_indo(tokenized_sentence)
+    X = bag_of_words(tokenized_sentence, all_words)
     X = X.reshape(1, X.shape[0])
     X = torch.from_numpy(X)
 
@@ -48,15 +51,24 @@ def get_response(message):
     probs = torch.softmax(output, dim=1)
     prob = probs[0][predicted.item()]
 
+    # print(tokenized_sentence)
+    # print(tag)
+    # print(prob)
+
     if prob.item() > 0.75:
         for intent in intents['intents']:
-            if tag == intent['tags']:
-                item_random = None
-                if len(intent['randoms']) > 0:
-                    item_random = random.choices(intent['randoms'], k=5)
-                    item_random = ', '.join(item_random)
+            if tag != intent['tags']:
+                continue
+            
+            options = None
+            if len(intent['randoms']) > 0:
+                options = random.choices(intent['randoms'], k=5)
+                options = ', '.join(options)
 
-                return {'tags': tag, 'message':random.choice(intent['responses']), 'random':item_random}
+            response = random.choice(intent['responses'])
+            response = response.replace("(sameres)", message.capitalize())
+
+            return {'tags': tag, 'message':response, 'random':options}
     else:
         return get_not_understanding_message()
 
@@ -70,7 +82,6 @@ if __name__ == '__main__':
         resp = get_response(message)
         resp_tags = resp['tags']
         resp_message = resp['message']
-        resp_message = resp_message.replace("(sameres)", message.capitalize())
         resp_random = resp['random']
         
         print(bot_name + ': ' + resp_message + ' ' + (resp_random if resp_random != None else ''))

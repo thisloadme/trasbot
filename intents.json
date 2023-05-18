@@ -3,17 +3,25 @@
         {
             "tags": "sapa",
             "patterns": [
-                "hai","hello","halo"
+                "hai",
+                "hello",
+                "halo"
             ],
             "responses": [
-                "(sameres) juga, Trasbot disini","halo halo, Trasbot disini","(sameres), ada yang bisa dibantu?","Hai, Trasbot disini"
+                "(sameres) juga, Trasbot disini",
+                "halo halo, Trasbot disini",
+                "(sameres), ada yang bisa dibantu?",
+                "Hai, Trasbot disini"
             ],
             "randoms": []
         },
         {
             "tags": "selamat",
             "patterns": [
-                "selamat pagi","selamat malam","selamat siang","selamat sore","selamat sore menjelang malam"
+                "selamat pagi",
+                "selamat malam",
+                "selamat siang",
+                "selamat sore"
             ],
             "responses": [
                 "(sameres)"
@@ -23,7 +31,9 @@
         {
             "tags": "salam",
             "patterns": [
-                "assalamualaikum","assalamu'alaykum","assalamualaikum warahmatullahi wabarakatuh"
+                "assalamualaikum",
+                "assalamu'alaykum",
+                "assalamualaikum warahmatullahi wabarakatuh"
             ],
             "responses": [
                 "Wa'alaykumussalam Warahmatullahi Wabarakatuh"
@@ -31,9 +41,53 @@
             "randoms": []
         },
         {
+            "tags": "mautanya",
+            "patterns": [
+                "permisi saya mau tanya",
+                "saya mau tanya",
+                "saya punya pertanyaan terkait",
+                "ada yang mau saya tanyakan",
+                "bolehkah aku tanya",
+                "boleh tanya",
+                "mau tanya"
+            ],
+            "responses": [
+                "Mau tanya apa? Saya siap membantu",
+                "Saya siap menjawab pertanyaanmu",
+                "Silakan, saya akan berusaha menjawabnya"
+            ],
+            "randoms": []
+        },
+        {
+            "tags": "sejakkapanberdiri",
+            "patterns": [
+                "sejak kapan traspac berdiri",
+                "traspac mulai beroperasi tahun berapa",
+                "kapan traspac didirikan",
+                "sejak tahun berapa traspac aktif",
+                "traspac berdiri",
+                "perusahaan ini berjalan"
+            ],
+            "responses": [
+                "Traspac berdiri sejak tahun 1997",
+                "Sejak tahun 1997, Traspac mulai aktif beroperasi",
+                "Traspac didirikan tahun 1997"
+            ],
+            "randoms": []
+        },
+        {
             "tags": "pengertian",
             "patterns": [
-                "apa itu traspac makmur sejahtera","apakah perusahaan traspac makmur sejahtera itu","traspac makmur sejahtera itu perusahaan apa","ini perusahaan apa","ini perusahaan apaan","traspac itu apa"
+                "apa itu traspac makmur sejahtera",
+                "apakah perusahaan traspac makmur sejahtera itu",
+                "traspac makmur sejahtera itu perusahaan apa",
+                "ini perusahaan apa",
+                "ini perusahaan apaan",
+                "traspac itu apa",
+                "traspac bergerak di bidang apa",
+                "kapan traspac berdiri",
+                "tahun berapa traspac berdiri",
+                "perkenalan"
             ],
             "responses": [
                 "Perusahaan Traspac Makmur Sejahtera adalah perusahaan yang bergerak di bidang pengembangan aplikasi perangkat lunak dan penyedia jasa layanan ICT. Visi kami adalah Menjadi Perusahaan Solusi Teknologi Informasi yang inovatif dan kokoh dalam pelayanan pelanggan. Kami berdiri sejak tahun 1997 di Surabaya",
@@ -43,9 +97,56 @@
             "randoms": []
         },
         {
+            "tags": "nilainilai",
+            "patterns": [
+                "apa nilai-nilai yang dijunjung di traspac",
+                "semboyan traspac",
+                "apa slogan traspac",
+                "apa makna slogan traspac",
+                "apa semboyan traspac"
+            ],
+            "responses": [
+                "Kami memiliki slogan 'Traspac IS Professional' yang bermakna Traspac Integritas Semangat Professional",
+                "Nilai-nilai yang kami junjung termaktub pada slogan kami yaitu 'Traspac IS Professional' yang bermakna Traspac Integritas Semangat Professional"
+            ],
+            "randoms": []
+        },
+        {
+            "tags": "budayakerja",
+            "patterns": [
+                "apa budaya kerja yang diterapkan di traspac",
+                "budaya kerja",
+                "cara karyawan bekerja"
+            ],
+            "responses": [
+                "Budaya kerja yang diterapkan menggunakan sistem Clan, dimana kami saling membantu dan bekerja sama dalam mencapai tujuan perusahaan",
+                "Budaya kerja Clan adalah yang paling mencerminkan budaya kerja di Traspac, yaitu budaya kerja yang menekankan kebersamaan dan hubungan antar karyawan"
+            ],
+            "randoms": []
+        },
+        {
+            "tags": "lokasikantor",
+            "patterns": [
+                "dimana lokasi kantor traspac berada",
+                "lokasi kantor traspac",
+                "gedung traspac ada dimana",
+                "apa alamat lengkap kantor traspac",
+                "traspac terletak dimana"
+            ],
+            "responses": [
+                "Kantor kami terletak di Thamrin City Office Park blok AA-02, Jakarta 10230"
+            ],
+            "randoms": []
+        },
+        {
             "tags": "visi",
             "patterns": [
-                "apa visi traspac","apa visinya traspac","apa visi perusahaan ini","visi apa dibalik perusahaan ini","apa tujuan diberdirikannya traspac makmur sejahtera","visinya apa","visinya apaan"
+                "apa visi traspac",
+                "apa visinya traspac",
+                "apa visi perusahaan ini",
+                "visi apa dibalik perusahaan ini",
+                "apa tujuan diberdirikannya traspac makmur sejahtera",
+                "visinya apa"
             ],
             "responses": [
                 "Visi kami adalah Menjadi Perusahaan Solusi Teknologi Informasi yang inovatif dan kokoh dalam pelayanan pelanggan"
@@ -55,7 +156,13 @@
         {
             "tags": "misi",
             "patterns": [
-                "apa misi traspac","apa misinya traspac","apa misi perusahaan ini","apa yang dilakukan perusahaan ini untuk mencapai visinya","bagaimana misi traspac","kalo misinya apa","misinya apa"
+                "apa misi traspac",
+                "apa misinya traspac",
+                "apa misi perusahaan ini",
+                "apa yang dilakukan perusahaan ini untuk mencapai visinya",
+                "bagaimana misi traspac",
+                "kalo misinya apa",
+                "misinya apa"
             ],
             "responses": [
                 "Misi kami adalah Memberikan nilai tambah kepada pelanggan, Menjamin kemakmuran jangka panjang kepada karyawan dan stakeholder, Meningkatkan pertumbuhan perusahaan, Menjadi tempat bekerja yang sehat"
@@ -65,7 +172,15 @@
         {
             "tags": "alasan",
             "patterns": [
-                "kenapa harus menggunakan jasa traspac makmur sejahtera","apa nilai plus traspac yang membedakan dengan perusahaan lainnya","kenapa harus memilih traspac","kenapa harus menggunakan jasa dan layanan perusahaan ini","memangnya apa yang membuat traspac beda dari yang lain","kenapa saya harus bekerja sama"
+                "kenapa harus menggunakan jasa traspac makmur sejahtera",
+                "apa nilai plus traspac yang membedakan dengan perusahaan lainnya",
+                "kenapa harus memilih traspac",
+                "kenapa harus menggunakan jasa dan layanan perusahaan ini",
+                "memangnya apa yang membuat traspac beda dari yang lain",
+                "kenapa saya harus bekerja sama",
+                "alasan kerja sama",
+                "alasan kerjasama",
+                "apa hebatnya traspac"
             ],
             "responses": [
                 "Kami menawarkan Solusi yang Inovatif, Proses yang Efektif, SDM yang Kompeten, dan Pengalaman",
@@ -100,7 +215,12 @@
                 "adakah email yang bisa dihubungi",
                 "apa nomor telepon yang bisa dihubungi",
                 "adakah nomor telepon yang bisa dihubungi oleh klien",
-                "bagaimana cara klien menghubungi traspac untuk kerja sama"
+                "bagaimana cara klien menghubungi traspac untuk kerja sama",
+                "bagaimana cara menghubungi customer service atau bagian terkait lainnya jika ada masalah atau pertanyaan lebih lanjut",
+                "bagaimana cara memesan atau membeli produk atau layanan tersebut",
+                "saya ingin mengetahui lebih lanjut tentang traspac",
+                "saya ingin mengetahui lebih dalam tentang perusahaan ini",
+                "bisa ceritakan lebih detail mengenai hal"
             ],
             "responses": [
                 "Kamu bisa menghubungi Traspac melalui email info@traspac.co.id atau telepon (021) 31997486",
@@ -120,7 +240,8 @@
                 "traspac makmur sejahtera membuat aplikasi apa",
                 "produk apa yang dibuat traspac",
                 "apa produk atau layanan traspac",
-                "layanan apa yang ditawarkan traspac makmur sejahtera"
+                "layanan apa yang ditawarkan traspac makmur sejahtera",
+                "apa saja produk atau layanan yang ditawarkan oleh perusahaan ini"
             ],
             "responses": [
                 "Produk kami terbagi menjadi beberapa jenis, ada yang untuk Militer, Industri, Pemerintahan, dan juga produk riset kami yang bernama Trasidea"
@@ -251,13 +372,78 @@
                 "saya ingin bergabung, bagaimana caranya",
                 "saya berminat kerja di traspac",
                 "saya mau kerja disini",
-                "bagaimana cara saya untuk mengajukan lowongan disini"
+                "bagaimana cara saya untuk mengajukan lowongan disini",
+                "saya tertarik bekerja disini",
+                "lowongan kerja",
+                "apakah ada lowongan aktif",
+                "apa ada lowongan aktif",
+                "saya ingin daftar di sini",
+                "dimana saya bisa melihat lowongan",
+                "aku mau daftar di sini"
             ],
             "responses": [
                 "Kamu bisa langsung klik menu Lowongan di Menu Utama web kami",
                 "Kamu bisa langsung mengunjungi menu Lowongan di Menu Utama kami",
                 "Untuk info lebih lengkap dan detail, kamu bisa mengunjungi menu Lowongan di Menu Utama web kami",
                 "Langsung saja kunjungi laman Lowongan di Menu Utama web kami"
+            ],
+            "randoms": []
+        },
+        {
+            "tags": "syaratketentuan",
+            "patterns": [
+                "apa saja syarat dan ketentuan yang berlaku untuk produk atau layanan traspac makmur sejahtera",
+                "bagaimana kriteria dan aturan yang harus dipenuhi untuk menggunakan produk atau layanan traspac makmur sejahtera",
+                "produk atau layanan traspac makmur sejahtera memerlukan syarat dan ketentuan apa saja",
+                "untuk mendapatkan produk atau layanan traspac makmur sejahtera, aku harus memenuhi kriteria dan aturan apa saja",
+                "apa kriteria dan aturan yang ditetapkan untuk produk atau layanan traspac makmur sejahtera",
+                "saya harus mematuhi syarat dan ketentuan apa saja untuk produk atau layanan traspac makmur sejahtera"
+            ],
+            "responses": [
+                "Respon syaratketentuan"
+            ],
+            "randoms": []
+        },
+        {
+            "tags": "testimoni",
+            "patterns": [
+                "apa saja testimoni atau ulasan dari pelanggan yang sudah menggunakan produk atau layanan traspac makmur sejahtera",
+                "apa testimoni dari pelanggan traspac",
+                "bagaimana ulasan dari pengguna jasa traspac",
+                "boleh minta testimoni atau ulasan",
+                "minta testimoni"
+            ],
+            "responses": [
+                "Respon testimoni"
+            ],
+            "randoms": []
+        },
+        {
+            "tags": "manfaat",
+            "patterns": [
+                "apa saja keuntungan atau manfaat yang didapat dari menggunakan produk atau layanan traspac makmur sejahtera",
+                "apa keuntungan yang aku dapatkan dari menggunakan jasa traspac",
+                "manfaat yang didapatkan dari layanan traspac",
+                "manfaat yang ditawarkan traspac untuk klien dan pengguna",
+                "manfaat produk traspac",
+                "apa keuntungan menggunakan produk traspac"
+            ],
+            "responses": [
+                "Respon manfaat"
+            ],
+            "randoms": []
+        },
+        {
+            "tags": "feedback",
+            "patterns": [
+                "bagaimana cara memberikan feedback atau saran untuk meningkatkan kualitas produk atau layanan traspac makmur sejahtera",
+                "cara kasih feedback untuk layanan traspac",
+                "memberi saran untuk traspac",
+                "cara memberi saran atau feedback untuk produk traspac",
+                "memberi umpan balik"
+            ],
+            "responses": [
+                "Respon feedback"
             ],
             "randoms": []
         },

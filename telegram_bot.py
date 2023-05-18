@@ -18,8 +18,8 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     await update.message.reply_html(rf"Halo {user.mention_html()}! Trasbot disini, kamu bisa menanyakan kepadaku apapun tentang Traspac!",reply_markup=ForceReply(selective=True))
 
 async def response(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
-    text_response = await get_response(update.message.text)
-    await update.message.reply_text(text_response)
+    text_response = get_response(update.message.text)
+    await update.message.reply_text(text_response['message'])
 
 
 def main() -> None:
