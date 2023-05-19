@@ -13,5 +13,13 @@ def predict():
     message = {"answer": response['message'] + '' + ((' ' + response['random']) if response['random'] != None else '')}
     return jsonify(message)
 
+@app.post("/chat")
+def chat():
+    text = request.get_json().get('message')
+
+    response = get_response(text)
+    message = {"answer": response['message'] + '' + ((' ' + response['random']) if response['random'] != None else '')}
+    return jsonify(message)
+
 if __name__ == '__main__':
     app.run(debug=True)
