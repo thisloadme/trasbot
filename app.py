@@ -5,6 +5,10 @@ from chat import get_response
 app = Flask(__name__)
 CORS(app)
 
+@app.get("/")
+def home():
+    return 'Hello world'
+
 @app.get("/predict")
 def predict():
     text = request.args.get('message')
