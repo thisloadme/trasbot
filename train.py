@@ -10,6 +10,7 @@ from torch.utils.data import Dataset, DataLoader
 from model import NeuralNet
 
 current_dir = os.getcwd()
+ignore_words = ['?', '!', '<', '>', '.', ',']
 
 with open(current_dir + '/intents.json', 'r') as f:
     intents = json.load(f)
@@ -23,13 +24,13 @@ for intent in intents['intents']:
 
     for pattern in intent['patterns']:
         w = tokenize(pattern)
+        w = [w_ for w_ in w if w_ not in ignore_words]
         all_words.extend(w)
 
         xy.append((w, tag))
 
-ignore_words = ['?', '!', '<', '>', '.', ',']
 all_words = [w.lower() for w in all_words if w not in ignore_words]
-all_words = remove_stopwords_indo(all_words)
+# all_words = remove_stopwords_indo(all_words)
 all_words = sorted(set(all_words))
 tags = sorted(set(tags))
 
@@ -57,9 +58,8 @@ class ChatDataset(Dataset):
     def __len__(self):
         return self.n_samples
     
-
 batch_size = 8
-hidden_size = len(X_train[0]) + 8
+hidden_size = len(tags) + 8
 output_size = len(tags)
 input_size = len(X_train[0])
 learning_rate = 0.001
@@ -77,7 +77,7 @@ device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 model = NeuralNet(input_size, hidden_size, output_size).to(device)
 
 criterion = nn.CrossEntropyLoss()
-optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)
+optimizer = torch.optim.SGD(model.parameters(), lr=learning_rate, momentum=0.9)
 
 for epoch in range(num_epochs):
     for (words, labels) in train_loader:
@@ -91,7 +91,7 @@ for epoch in range(num_epochs):
         loss.backward()
         optimizer.step()
 
-    if (epoch+1) % 50 == 0:
+    if (epoch+1) % 100 == 0:
         print(f'epoch {epoch+1}/{num_epochs}, loss={loss.item():.4f}')
 
 print(f'final loss={loss.item():.4f}')

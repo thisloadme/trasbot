@@ -39,7 +39,7 @@ def get_not_understanding_message():
 
 def get_response(message):
     tokenized_sentence = tokenize_correct_typo_slang(message, all_words)
-    tokenized_sentence = remove_stopwords_indo(tokenized_sentence)
+    # tokenized_sentence = remove_stopwords_indo(tokenized_sentence)
     X = bag_of_words(tokenized_sentence, all_words)
     X = X.reshape(1, X.shape[0])
     X = torch.from_numpy(X)

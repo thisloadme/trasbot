@@ -382,10 +382,10 @@
                 "aku mau daftar di sini"
             ],
             "responses": [
-                "Kamu bisa langsung klik menu Lowongan di Menu Utama web kami",
+                "Lowongan kami selalu tersedia, kamu bisa langsung klik menu Lowongan di Menu Utama web kami",
                 "Kamu bisa langsung mengunjungi menu Lowongan di Menu Utama kami",
                 "Untuk info lebih lengkap dan detail, kamu bisa mengunjungi menu Lowongan di Menu Utama web kami",
-                "Langsung saja kunjungi laman Lowongan di Menu Utama web kami"
+                "Lowongan kami selalu tersedia, langsung saja kunjungi laman Lowongan di Menu Utama web kami"
             ],
             "randoms": []
         },
@@ -401,6 +401,69 @@
             ],
             "responses": [
                 "Respon syaratketentuan"
+            ],
+            "randoms": []
+        },
+        {
+            "tags": "syaratdev",
+            "patterns": [
+                "apa saja keterampilan dan kualifikasi yang dibutuhkan untuk posisi developer",
+                "apa keterampilan yang dibutuhkan untuk mendaftar di posisi dev",
+                "apakah ada syarat kualifikasi yang dibutuhkan untuk posisi web developer",
+                "apa minimal keterampilan yang harus dimiliki pegawai di posisi developer",
+                "apa saja keterampilan dan kualifikasi yang dibutuhkan developer di traspac",
+                "keterampilan kualifikasi posisi developer"
+            ],
+            "responses": [
+                "Untuk menjadi developer di Traspac, minimal kamu harus memiliki Keterampilan berorganisasi yang kuat, Keterampilan dalam bidang matematika, Mampu untuk terus up to date dengan perubahan dan perkembangan tren yang terjadi kini, Kemampuan untuk belajar dengan cepat, Kemampuan untuk menginterprestasikan serta mengikuti rencana teknis, Kemampuan menyelesaikan masalah, Kemampuan berkomunikasi yang baik (lisan mau pun tulisan)"
+            ],
+            "randoms": []
+        },
+        {
+            "tags": "syaratba",
+            "patterns": [
+                "apa saja keterampilan dan kualifikasi yang dibutuhkan untuk posisi bisnis analis",
+                "apa keterampilan yang dibutuhkan untuk mendaftar di posisi bisnis analis",
+                "apakah ada syarat kualifikasi yang dibutuhkan untuk posisi ba",
+                "apa minimal keterampilan yang harus dimiliki pegawai di posisi bisnis analis",
+                "apa saja keterampilan dan kualifikasi yang dibutuhkan business analyst di traspac",
+                "keterampilan kualifikasi posisi business analyst bisnis analis"
+            ],
+            "responses": [
+                "Untuk menjadi Business Analyst di Traspac, minimal kamu harus memiliki Keterampilan berorganisasi yang kuat, Mampu untuk terus up to date dengan perubahan dan perkembangan tren yang terjadi kini, Kemampuan untuk belajar dengan cepat, Kemampuan untuk menginterprestasikan serta mengikuti rencana teknis, Kemampuan menyelesaikan masalah, Kemampuan berkomunikasi yang baik (lisan mau pun tulisan)"
+            ],
+            "randoms": []
+        },
+        {
+            "tags": "syaratitsupport",
+            "patterns": [
+                "apa saja keterampilan dan kualifikasi yang dibutuhkan untuk posisi it support",
+                "apa keterampilan yang dibutuhkan untuk mendaftar di posisi it support",
+                "apakah ada syarat kualifikasi yang dibutuhkan untuk posisi dkp",
+                "apa minimal keterampilan yang harus dimiliki pegawai di posisi data analis",
+                "apa saja keterampilan dan kualifikasi yang dibutuhkan data analyst di traspac",
+                "keterampilan kualifikasi posisi it support data analis dkp"
+            ],
+            "responses": [
+                "Untuk menjadi IT Support di Traspac, minimal kamu harus memiliki Dapat Melakukan instalasi OS dan installasi Hardware/Software yang mendukung, Mengetahui penggunaan Linux dasar, Mengetahui pengetahun jaringan, Memahami penggunaan SQL Server, Postgre SQL, ataupun MySQL dan bersedia mendalaminya, Tidak mudah bosan/senang dalam melakukan pengolahan data, Memiliki Kemampuan Komunikasi yang baik, Public Speaking yang baik, Mampu dan siap bekera secara flexible baik secara tim maupun individu"
+            ],
+            "randoms": []
+        },
+        {
+            "tags": "rekrutmen",
+            "patterns": [
+                "bagaimana proses seleksi di traspac",
+                "apa tahap tahap yang harus dilakukan untuk mengikuti proses seleksi",
+                "apa tahapan proses seleksi di traspac",
+                "apa urutan tahapan yang dilalui ketika rekrutmen di traspac",
+                "proses seleksi di traspac seperti apa",
+                "proses rekrutmen biasanya dilakukan seperti apa",
+                "saya ingin ikut rekrutmen traspac, bagaimana tahapan rekrutmennya",
+                "proses seleksi rekrutmen traspac"
+            ],
+            "responses": [
+                "Proses seleksi di traspac diawali dengan seleksi CV yang akan dilakukan oleh SDM, untuk CV yang lolos maka akan dihubungi untuk melakukan wawancara bersama SDM dan kepala bagian dari posisi yang dilamar, selanjutnya akan diumumkan hasilnya melalui email kamu",
+                "Setelah kamu mengajukan CV ke Traspac, maka CV kamu akan diseleksi oleh SDM, untuk CV yang lolos maka akan dihubungi untuk melakukan wawancara bersama SDM dan kepala bagian dari posisi yang dilamar, selanjutnya akan diumumkan hasilnya melalui email kamu"
             ],
             "randoms": []
         },
@@ -429,7 +492,10 @@
                 "apa keuntungan menggunakan produk traspac"
             ],
             "responses": [
-                "Respon manfaat"
+                "Salah satu manfaat produk kami adalah membantu menciptakan budaya digital organisasi dengan peningkatan kompetensi digital SDM, perancangan kembali proses kerja berbasis digital, dan pemanfaatan optimal teknologi informasi Artificial intelligence, Internet of Things, Big Data",
+                "Salah satu manfaat produk kami adalah meningkatkan efisiensi, produktivitas, dan kualitas kerja dalam organisasi",
+                "Salah satu manfaat produk kami adalah meningkatkan keterlibatan, komunikasi, dan kolaborasi antara anggota organisasi atau instansi",
+                "Salah satu manfaat produk kami adalah meningkatkan kepuasan dan loyalitas pelanggan dengan memberikan produk atau layanan yang sesuai dengan kebutuhan dan harapan mereka"
             ],
             "randoms": []
         },
@@ -443,7 +509,7 @@
                 "memberi umpan balik"
             ],
             "responses": [
-                "Respon feedback"
+                "Kamu bisa langsung mengirimkan email ke info@traspac.co.id. Kamu bisa menghubungi kami melalui email tersebut untuk berbagai keperluan, seperti konsultasi, layanan, umpan balik, atau kerjasama"
             ],
             "randoms": []
         },
