@@ -66,7 +66,7 @@ def get_response(message):
                 options = ', '.join(options)
 
             response = random.choice(intent['responses'])
-            response = response.replace("(sameres)", message.capitalize())
+            response = response.replace("(sameres)", ' '.join(tokenize_correct_typo_slang(message, all_words)).capitalize())
 
             return {'tags': tag, 'message':response, 'random':options}
     else:
