@@ -514,6 +514,20 @@
             "randoms": []
         },
         {
+            "tags": "ceo",
+            "patterns": [
+                "siapa ceo traspac",
+                "siapa ceonya",
+                "ceo traspac namanya siapa",
+                "nama ceo nya siapa"
+            ],
+            "responses": [
+                "CEO kami bernama bapak Purnadi",
+                "CEO dari PT Traspac adalah bapak Purnadi"
+            ],
+            "randoms": []
+        },
+        {
             "tags": "terimakasih",
             "patterns": [
                 "terima kasih ya",

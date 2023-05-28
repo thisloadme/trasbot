@@ -1,6 +1,6 @@
 import os
 import json
-from nlp_utils import tokenize, bag_of_words, remove_stopwords_indo
+from nlp_utils import tokenize, bag_of_words, remove_stopwords_indo, slang_word_meaning
 import numpy as np
 
 import torch
@@ -24,7 +24,7 @@ for intent in intents['intents']:
 
     for pattern in intent['patterns']:
         w = tokenize(pattern)
-        w = [w_ for w_ in w if w_ not in ignore_words]
+        w = [slang_word_meaning(w_) for w_ in w if w_ not in ignore_words]
         all_words.extend(w)
 
         xy.append((w, tag))
@@ -58,8 +58,8 @@ class ChatDataset(Dataset):
     def __len__(self):
         return self.n_samples
     
-batch_size = 8
-hidden_size = len(tags) + 8
+batch_size = 16
+hidden_size = len(X_train[0]) + 64
 output_size = len(tags)
 input_size = len(X_train[0])
 learning_rate = 0.001
