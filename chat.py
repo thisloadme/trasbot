@@ -38,6 +38,7 @@ def get_not_understanding_message():
     return {'tags': None, 'message':message, 'random':None}
 
 def get_response(message):
+    message = message.lower()
     tokenized_sentence = tokenize_correct_typo_slang(message, all_words)
     # tokenized_sentence = remove_stopwords_indo(tokenized_sentence)
     X = bag_of_words(tokenized_sentence, all_words)
