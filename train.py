@@ -59,7 +59,7 @@ class ChatDataset(Dataset):
         return self.n_samples
     
 batch_size = 16
-hidden_size = len(X_train[0]) + 64
+hidden_size = 256
 output_size = len(tags)
 input_size = len(X_train[0])
 learning_rate = 0.001
@@ -77,7 +77,8 @@ device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 model = NeuralNet(input_size, hidden_size, output_size).to(device)
 
 criterion = nn.CrossEntropyLoss()
-optimizer = torch.optim.SGD(model.parameters(), lr=learning_rate, momentum=0.9)
+optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)
+# optimizer = torch.optim.SGD(model.parameters(), lr=learning_rate, momentum=0.9)
 
 for epoch in range(num_epochs):
     for (words, labels) in train_loader:
