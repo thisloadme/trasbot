@@ -2,6 +2,9 @@ from flask import Flask, request, jsonify, make_response
 from flask_cors import CORS
 from chat import get_response
 import requests
+import os
+from dotenv import load_dotenv
+load_dotenv()
 
 app = Flask(__name__)
 CORS(app)
@@ -33,7 +36,7 @@ def post_wa_webhook():
         phone_number_id = params['entry'][0]['changes'][0]['value']['metadata']['phone_number_id']
         phone_number_from = params['entry'][0]['changes'][0]['value']['messages'][0]['from']
         msg_body = params['entry'][0]['changes'][0]['value']['messages'][0]['text']['body']
-        token = 'EAASNEZAzcvHkBAO3ithqWwZAdZCzySdBtgyZBfayRuuK8gC5cH6gsh2WbjpqVAqRpbGN7UwuAZAEunryrW3RWZCA1yKxhtWYFC0a3OxZAufbxKrpDRN2ceN6Vrw3NSJ8pXBRR0pGyuOhpk2fhZBLS5se0oaaWoRND0F33A57tAEJrXIffulDVI1A'
+        token = os.getenv('WA_API_KEY')
         url = 'https://graph.facebook.com/v12.0/' + phone_number_id + '/messages?access_token=' + token
         dict_to_send = {
             'messaging_product': "whatsapp",
@@ -53,7 +56,7 @@ def post_wa_webhook():
 
 @app.get("/wa-webhook")
 def get_wa_webhook():
-    verify_token = 'DION123'
+    verify_token = os.getenv('WA_TOKEN_VERIF')
 
     params = request.args
     mode = params.get('hub.mode')
