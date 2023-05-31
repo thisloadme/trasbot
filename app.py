@@ -56,9 +56,9 @@ def get_wa_webhook():
     verify_token = 'DION123'
 
     params = request.args
-    mode = params['hub.mode']
-    token = params['hub.verify_token']
-    challenge = params['hub.challenge']
+    mode = params.get('hub.mode')
+    token = params.get('hub.verify_token')
+    challenge = params.get('hub.challenge')
 
     if mode != None and token != None:
         if mode == "subscribe" and token == verify_token:
@@ -67,4 +67,4 @@ def get_wa_webhook():
     return make_response(jsonify({'message': 'gagal'}), 403)
 
 if __name__ == '__main__':
-    app.run(debug=True, host="0.0.0.0")
+    app.run(debug=True, host="0.0.0.0", port="3000")
