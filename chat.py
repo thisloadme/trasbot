@@ -3,6 +3,7 @@ import random
 import json
 import torch
 from model import NeuralNet
+from model_lstm import LSTM
 from nlp_utils import bag_of_words, remove_stopwords_indo
 from utility import tokenize_correct_typo_slang
 
@@ -12,7 +13,7 @@ device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 with open(current_dir + '/intents.json', 'r') as f:
     intents = json.load(f)
 
-FILE = current_dir + '/data.pth'
+FILE = current_dir + '/data_lstm.pth'
 data = torch.load(FILE)
 
 model_state = data['model_state']
@@ -22,7 +23,8 @@ hidden_size = data['hidden_size']
 all_words = data['all_words']
 tags = data['tags']
 
-model = NeuralNet(input_size, hidden_size, output_size).to(device)
+model = LSTM(input_size, hidden_size, output_size).to(device)
+# model = NeuralNet(input_size, hidden_size, output_size).to(device)
 model.load_state_dict(model_state)
 model.eval()
 
@@ -56,7 +58,7 @@ def get_response(message):
     # print(tag)
     # print(prob)
 
-    if prob.item() > 0.75:
+    if prob.item() > 0.7:
         for intent in intents['intents']:
             if tag != intent['tags']:
                 continue

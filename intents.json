@@ -9,7 +9,7 @@
             ],
             "responses": [
                 "(sameres) juga, Trasbot disini",
-                "halo halo, Trasbot disini",
+                "Halo halo, Trasbot disini",
                 "(sameres), ada yang bisa dibantu?",
                 "Hai, Trasbot disini"
             ],
@@ -24,7 +24,7 @@
                 "selamat sore"
             ],
             "responses": [
-                "(sameres)"
+                "(sameres), ada yang bisa saya bantu?"
             ],
             "randoms": []
         },
@@ -32,8 +32,10 @@
             "tags": "salam",
             "patterns": [
                 "assalamualaikum",
+                "assalamu'alaikum",
                 "assalamu'alaykum",
-                "assalamualaikum warahmatullahi wabarakatuh"
+                "assalamualaikum warahmatullahi wabarakatuh",
+                "assalamu'alaikum warahmatullah"
             ],
             "responses": [
                 "Wa'alaykumussalam Warahmatullahi Wabarakatuh"
@@ -49,7 +51,13 @@
                 "ada yang mau saya tanyakan",
                 "bolehkah aku tanya",
                 "boleh tanya",
-                "mau tanya"
+                "mau tanya",
+                "boleh nanya ga",
+                "pengen tanya",
+                "aku mau tanya sesuatu",
+                "boleh saya bertanya tentang ini",
+                "kalo boleh saya tanya tentang hal ini",
+                "aku arep takon"
             ],
             "responses": [
                 "Mau tanya apa? Saya siap membantu",
@@ -66,7 +74,8 @@
                 "kapan traspac didirikan",
                 "sejak tahun berapa traspac aktif",
                 "traspac berdiri",
-                "perusahaan ini berjalan"
+                "perusahaan ini berjalan",
+                "tahun berdirinya traspac"
             ],
             "responses": [
                 "Traspac berdiri sejak tahun 1997",
@@ -87,7 +96,9 @@
                 "traspac bergerak di bidang apa",
                 "kapan traspac berdiri",
                 "tahun berapa traspac berdiri",
-                "perkenalan"
+                "perkenalan",
+                "kenalin dirimu dong",
+                "kenalin traspac kepada saya"
             ],
             "responses": [
                 "Perusahaan Traspac Makmur Sejahtera adalah perusahaan yang bergerak di bidang pengembangan aplikasi perangkat lunak dan penyedia jasa layanan ICT. Visi kami adalah Menjadi Perusahaan Solusi Teknologi Informasi yang inovatif dan kokoh dalam pelayanan pelanggan. Kami berdiri sejak tahun 1997 di Surabaya",
@@ -116,7 +127,9 @@
             "patterns": [
                 "apa budaya kerja yang diterapkan di traspac",
                 "budaya kerja",
-                "cara karyawan bekerja"
+                "cara karyawan bekerja",
+                "cara kerja di traspac bagaimana",
+                "di traspac mengadopsi budaya kerja seperti apa"
             ],
             "responses": [
                 "Budaya kerja yang diterapkan menggunakan sistem Clan, dimana kami saling membantu dan bekerja sama dalam mencapai tujuan perusahaan",
@@ -131,7 +144,9 @@
                 "lokasi kantor traspac",
                 "gedung traspac ada dimana",
                 "apa alamat lengkap kantor traspac",
-                "traspac terletak dimana"
+                "traspac terletak dimana",
+                "mau ke traspac harus lewat mana ya",
+                "traspac berada di area mana"
             ],
             "responses": [
                 "Kantor kami terletak di Thamrin City Office Park blok AA-02, Jakarta 10230"
@@ -198,7 +213,9 @@
                 "jam kerja traspac ada di jam berapa",
                 "dari jam berapa sampai berapa traser bekerja",
                 "jam operasionalnya kapan ya",
-                "jam operasionalnya dari jam berapa sampai berapa"
+                "jam operasionalnya dari jam berapa sampai berapa",
+                "jam operasional traspac",
+                "kantor traspac buka jam berapa ya"
             ],
             "responses": [
                 "Kami beroperasi dari jam 08.00 - 17.00 untuk hari Senin sampai Kamis, dan jam 08.00 - 17.45 untuk hari Jumat",
@@ -256,7 +273,8 @@
                 "untuk yang militer contohnya apa",
                 "produk yang militer apa contohnya",
                 "apa contoh produk dalam aspek militer",
-                "apa yang traspac buat untuk militer"
+                "apa yang traspac buat untuk militer",
+                "jenis jenis produk untuk militer"
             ],
             "responses": [
                 "Berikut adalah beberapa aplikasi yang kami buat dalam bidang militer:",
@@ -285,7 +303,8 @@
                 "untuk yang industri contohnya apa",
                 "produk yang industri apa contohnya",
                 "apa contoh produk dalam aspek industri",
-                "apa yang traspac buat untuk industri"
+                "apa yang traspac buat untuk industri",
+                "jenis jenis produk untuk industri"
             ],
             "responses": [
                 "Berikut adalah beberapa aplikasi yang kami buat dalam bidang industri:",
@@ -316,7 +335,8 @@
                 "untuk yang pemerintahan contohnya apa",
                 "produk yang pemerintahan apa contohnya",
                 "apa contoh produk dalam aspek pemerintahan",
-                "apa yang traspac buat untuk pemerintahan"
+                "apa yang traspac buat untuk pemerintahan",
+                "jenis jenis produk untuk pemerintahan"
             ],
             "responses": [
                 "Berikut adalah beberapa aplikasi yang kami buat dalam bidang pemerintahan:",
@@ -345,7 +365,8 @@
             "patterns": [
                 "apa saja contoh produk riset traspac",
                 "apa contoh aplikasi trasidea",
-                "apa saja jenis aplikasi trasidea"
+                "apa saja jenis aplikasi trasidea",
+                "jenis jenis trasidea"
             ],
             "responses": [
                 "Berikut adalah beberapa aplikasi trasidea hasil riset kami:",
@@ -379,7 +400,9 @@
                 "apa ada lowongan aktif",
                 "saya ingin daftar di sini",
                 "dimana saya bisa melihat lowongan",
-                "aku mau daftar di sini"
+                "aku mau daftar di sini",
+                "saya punya skill ini dan mau daftar di traspac",
+                "bagaimana cara daftar"
             ],
             "responses": [
                 "Lowongan kami selalu tersedia, kamu bisa langsung klik menu Lowongan di Menu Utama web kami",
@@ -400,7 +423,7 @@
                 "saya harus mematuhi syarat dan ketentuan apa saja untuk produk atau layanan traspac makmur sejahtera"
             ],
             "responses": [
-                "Respon syaratketentuan"
+                "Untuk syarat dan ketentuan kamu bisa langsung menghubungi Product Management Officer yang ada di Traspac"
             ],
             "randoms": []
         },
@@ -477,7 +500,7 @@
                 "minta testimoni"
             ],
             "responses": [
-                "Respon testimoni"
+                "Maaf, saya tidak menemukan testimoni di database saya"
             ],
             "randoms": []
         },
@@ -506,7 +529,8 @@
                 "cara kasih feedback untuk layanan traspac",
                 "memberi saran untuk traspac",
                 "cara memberi saran atau feedback untuk produk traspac",
-                "memberi umpan balik"
+                "memberi umpan balik",
+                "saya ingin memberikan saran dan feedback untuk layanan traspac"
             ],
             "responses": [
                 "Kamu bisa langsung mengirimkan email ke info@traspac.co.id. Kamu bisa menghubungi kami melalui email tersebut untuk berbagai keperluan, seperti konsultasi, layanan, umpan balik, atau kerjasama"
@@ -519,11 +543,27 @@
                 "siapa ceo traspac",
                 "siapa ceonya",
                 "ceo traspac namanya siapa",
-                "nama ceo nya siapa"
+                "nama ceo nya siapa",
+                "siapa sosok dibalik traspac"
             ],
             "responses": [
                 "CEO kami bernama bapak Purnadi",
                 "CEO dari PT Traspac adalah bapak Purnadi"
+            ],
+            "randoms": []
+        },
+        {
+            "tags": "okeoke",
+            "patterns": [
+                "oke",
+                "ok",
+                "okay deh",
+                "okey",
+                "oh"
+            ],
+            "responses": [
+                "Ada lagi yang bisa saya bantu ?",
+                "Iya bagaimana ? Apakah masih ada yang ingin ditanyakan ?"
             ],
             "randoms": []
         },
