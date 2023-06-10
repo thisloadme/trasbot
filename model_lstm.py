@@ -13,14 +13,14 @@ class LSTM(nn.Module):
         device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
         # Set initial hidden and cell states
-        h0 = torch.zeros(self.num_layers, self.hidden_size).to(device)
-        c0 = torch.zeros(self.num_layers, self.hidden_size).to(device)
+        h0 = torch.zeros(self.num_layers, self.hidden_size).to(device).requires_grad_()
+        c0 = torch.zeros(self.num_layers, self.hidden_size).to(device).requires_grad_()
         # x.size(0),
         # print(h0.shape)
         # print(c0.shape)
 
         # forward
-        out, _ = self.lstm(x, (h0, c0))
+        out, _ = self.lstm(x, (h0.detach(), c0.detach()))
 
         # decode
         # [:,-1,:]

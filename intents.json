@@ -497,12 +497,90 @@
                 "apa testimoni dari pelanggan traspac",
                 "bagaimana ulasan dari pengguna jasa traspac",
                 "boleh minta testimoni atau ulasan",
-                "minta testimoni"
+                "minta testimoni",
+                "bagaimana review publik terhadap pt traspac",
+                "apa ulasan dari orang-orang",
+                "berikan contoh ulasan dari masyarakat terhadap pt traspac",
+                "contohkan bunyi testimoni yang diberikan masyarakat kepada traspac terkait jasa dan pelayanan"
             ],
             "responses": [
-                "Maaf, saya tidak menemukan testimoni di database saya"
+                "'Traspac cocok untuk siapa ? Perusahaan ini cocok bagi mereka yang freshgraduate terutama bagi lulusan SMK. disini anda akan banyak belajar mengerjakan project - project dari instansi pemerintah yang diperlukan kedisiplinan dan mental yang kuat dalam pengerjaannya. Bagi anda yang lulusan sarjana dan mempunyai keinginan dan skill untuk pengembangan lebih jauh lagi. saya sarankan mencari yang lain saja.' -JobStreet",
+                "'Cocok untuk Fresh Graduate yang mencari pengalaman. - Fasilitas mess, makan pagi, makan siang, transport. - Tidak ada senioritas. - Sangat cocok untuk fresh graduate yang ingin mencari ilmu sebanyak-banyaknya. - Klien sudah banyak dan hubungan ke klien sangat bagus. - Lingkungan ramah dan kekeluargaan tinggi.' -JobStreet",
+                "'Perusahaan ini bergerak di sektor teknologi dengan bisnis utama di bidang pengembangan aplikasi perangkat lunak dan penyedia jasa layanan ICT (Information and Communications Technology). Didirikan oleh bapak Purnadi S. Kom. Pada tahun 1997 di Surabaya.' -Kompasiana",
+                "'Traspac adalah perusahaan yang bergerak dibidang pembuatan perangkat lunak. Sejak pertama berdiri, perusahaan ini secara khusus telah mengembangkan berbagai solusi e-government Mengkaji dan melakukan penelitian tentang regulasi, tatalaksana serta stem kepemerintahan si dan mempelajari teknologi serta pengembangan sumber daya manusia menjadi fokus dari Traspac.' -Kompasiana"
             ],
             "randoms": []
+        },
+        {
+            "tags": "karyawan",
+            "patterns": [
+                "traspac mencari karyawan yang bagaimana",
+                "apa kriteria karyawan yang akan direkrut oleh traspac",
+                "karyawan yang seperti apa yang bisa diterima di pt traspac makmur sejahtera",
+                "apa tipe karyawan yang dicari oleh traspac",
+                "karyawan yang bagaimana yang dibutuhkan traspac"
+            ],
+            "responses": [
+                "Kami mencari karyawan yang memiliki kompetensi, kemampuan inovasi, dan kesungguhan menciptakan solusi digital",
+                "Karyawan yang kami cari adalah yang memiliki kompetensi, kemampuan inovasi, dan kesungguhan menciptakan solusi digital",
+                "Kami mencari SDM yang memiliki kompetensi, kemampuan inovasi, dan kesungguhan menciptakan solusi digital",
+                "SDM yang memiliki kompetensi, kemampuan inovasi, dan kesungguhan menciptakan solusi digital adalah yang kami cari untuk bergabung dengan kami"
+            ],
+            "randoms": []
+        },
+        {
+            "tags": "kompetensi",
+            "patterns": [
+                "apa saja keahlian dan kompetensi yang dibutuhkan untuk bergabung dengan PT Traspac Makmur Sejahtera",
+                "kalau mau gabung, harus bisa apa aja",
+                "apa keahlian yang dibutuhkan sebagai pegawai traspac",
+                "apa syarat keahlian pegawai traspac",
+                "keahlian apa yang dicari oleh traspac",
+                "keterampilan yang bagaimana yang dicari oleh traspac",
+                "apa kompetensi yang harus dikuasai oleh calon pegawai traspac untuk bisa bekerja dengan baik di sini",
+                "keterampilan dan kompetensi apa yang harus dimiliki oleh sdm traspac di tiap bagiannya",
+                "traspac mencari sdm dengan kriteria yang seperti apa",
+                "bagaimana kriteria pegawai baru yang dicari traspac",
+                "keahlian yang dimililki oleh calon pegawai baru agar bisa diterima di traspac"
+            ],
+            "responses": [
+                "Untuk bidang Human Capital Management, keahlian yang kami cari adalah keahlian dalam mengelola sumber daya manusia secara strategis dan efisien\n Untuk bidang Web & Mobile Application, keahlian yang kami cari adalah keahlian dalam membangun aplikasi yang dapat diakses melalui browser web atau perangkat mobile seperti smartphone dan tablet\n Untuk bidang Consulting, keahlian yang kami cari adalah keahlian dalam memberikan saran dan bantuan profesional kepada klien dalam bidang teknologi informasi\n Untuk bidang Business Process Reengineering, keahlian yang kami cari adalah keahlian dalam merancang ulang proses bisnis yang ada untuk meningkatkan efektivitas dan efisiensi\n Untuk bidang System Integrator, keahlian yang kami cari adalah keahlian dalam menggabungkan berbagai sistem atau komponen perangkat keras dan perangkat lunak menjadi satu kesatuan yang berfungsi secara optimal\n Untuk bidang Enterprise Application Development, keahlian yang kami cari adalah keahlian dalam mengembangkan aplikasi berskala besar yang dapat mendukung operasional perusahaan\n"
+            ],
+            "randoms": []
+        },
+        {
+            "tags": "klien",
+            "patterns": [
+                "siapa saja klien traspac",
+                "darimana saja klien traspac",
+                "siapa aja instansi yang pernah menggunakan jasa layanan traspac",
+                "client traspac",
+                "siapa saja pelanggan pt traspac",
+                "siapa mitra kerja traspac"
+            ],
+            "responses": [
+                "Beberapa pelanggan kami diantaranya:",
+                "Instansi yang pernah menggunakan jasa layanan kami diantaranya:"
+            ],
+            "randoms": [
+                "Kemhan",
+                "TNI",
+                "Asuransi Jasindo",
+                "Jasamarga",
+                "Radiant Utama Interinsco",
+                "Kemdikbud",
+                "BIG",
+                "BKPM",
+                "Minerba",
+                "Kemlu",
+                "Kemnaker",
+                "BMKG",
+                "Kemenpora",
+                "Kemenkop",
+                "Kemhub",
+                "Arsip Nasional RI",
+                "BPN"
+            ]
         },
         {
             "tags": "manfaat",
@@ -512,13 +590,14 @@
                 "manfaat yang didapatkan dari layanan traspac",
                 "manfaat yang ditawarkan traspac untuk klien dan pengguna",
                 "manfaat produk traspac",
+                "apa manfaat layanan traspac",
                 "apa keuntungan menggunakan produk traspac"
             ],
             "responses": [
-                "Salah satu manfaat produk kami adalah membantu menciptakan budaya digital organisasi dengan peningkatan kompetensi digital SDM, perancangan kembali proses kerja berbasis digital, dan pemanfaatan optimal teknologi informasi Artificial intelligence, Internet of Things, Big Data",
-                "Salah satu manfaat produk kami adalah meningkatkan efisiensi, produktivitas, dan kualitas kerja dalam organisasi",
-                "Salah satu manfaat produk kami adalah meningkatkan keterlibatan, komunikasi, dan kolaborasi antara anggota organisasi atau instansi",
-                "Salah satu manfaat produk kami adalah meningkatkan kepuasan dan loyalitas pelanggan dengan memberikan produk atau layanan yang sesuai dengan kebutuhan dan harapan mereka"
+                "Salah satu manfaat produk dan layanan kami adalah membantu menciptakan budaya digital organisasi dengan peningkatan kompetensi digital SDM, perancangan kembali proses kerja berbasis digital, dan pemanfaatan optimal teknologi informasi Artificial intelligence, Internet of Things, Big Data",
+                "Salah satu manfaat produk dan layanan kami adalah meningkatkan efisiensi, produktivitas, dan kualitas kerja dalam organisasi",
+                "Salah satu manfaat produk dan layanan kami adalah meningkatkan keterlibatan, komunikasi, dan kolaborasi antara anggota organisasi atau instansi",
+                "Salah satu manfaat produk dan layanan kami adalah meningkatkan kepuasan dan loyalitas pelanggan dengan memberikan produk atau layanan yang sesuai dengan kebutuhan dan harapan mereka"
             ],
             "randoms": []
         },

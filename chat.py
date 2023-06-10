@@ -4,7 +4,7 @@ import json
 import torch
 from model import NeuralNet
 from model_lstm import LSTM
-from nlp_utils import bag_of_words, remove_stopwords_indo
+from nlp_utils import bag_of_words, remove_stopwords_indo, sentiment_class
 from utility import tokenize_correct_typo_slang
 
 current_dir = os.getcwd()
@@ -39,10 +39,22 @@ def get_not_understanding_message():
     ])
     return {'tags': None, 'message':message, 'random':None}
 
+def get_negative_message():
+    message = random.choice([
+        "Maaf, sebaiknya jangan berkata seperti itu",
+        "Alangkah baiknya jika tidak mengucapkan hal seperti itu",
+        "Maaf, akan lebih baik jika mengucapkan hal-hal yang baik saja",
+    ])
+    return {'tags': None, 'message':message, 'random':None}
+
 def get_response(message):
     message = message.lower()
     tokenized_sentence = tokenize_correct_typo_slang(message, all_words)
     # tokenized_sentence = remove_stopwords_indo(tokenized_sentence)
+
+    if sentiment_class(' '.join(tokenized_sentence)) == 'neg':
+        return get_negative_message()
+
     X = bag_of_words(tokenized_sentence, all_words)
     X = X.reshape(1, X.shape[0])
     X = torch.from_numpy(X)
@@ -58,14 +70,14 @@ def get_response(message):
     # print(tag)
     # print(prob)
 
-    if prob.item() > 0.7:
+    if prob.item() > 0.8:
         for intent in intents['intents']:
             if tag != intent['tags']:
                 continue
             
             options = None
             if len(intent['randoms']) > 0:
-                options = random.choices(intent['randoms'], k=5)
+                options = random.sample(intent['randoms'], k=5)
                 options = ', '.join(options)
 
             response = random.choice(intent['responses'])
