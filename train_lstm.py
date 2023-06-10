@@ -64,6 +64,7 @@ output_size = len(tags)
 input_size = len(X_train[0])
 learning_rate = 0.001
 num_epochs = 1000
+min_error = 0.00001
 
 dataset = ChatDataset()
 train_loader = DataLoader(
@@ -94,6 +95,9 @@ for epoch in range(num_epochs):
         optimizer.zero_grad()
         loss.backward()
         optimizer.step()
+
+    if loss.item() <= min_error:
+        break
 
     if (epoch+1) % 100 == 0:
         print(f'epoch {epoch+1}/{num_epochs}, loss={loss.item():.4f}')
