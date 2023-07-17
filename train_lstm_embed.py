@@ -1,6 +1,6 @@
 import os
 import json
-from nlp_utils import tokenize, bag_of_words, remove_stopwords_indo, slang_word_meaning
+from nlp_utils import tokenize, bag_of_words, remove_stopwords_indo, slang_word_meaning, word_vec
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -8,7 +8,7 @@ import torch
 import torch.nn as nn
 from torch.utils.data import Dataset, DataLoader
 
-from model_lstm import LSTM
+from model_lstm_embed import LSTM
 
 current_dir = os.getcwd()
 ignore_words = ['?', '!', '<', '>', '.', ',']
@@ -38,7 +38,7 @@ tags = sorted(set(tags))
 X_train = []
 y_train = []
 for (pattern_sentence, tag) in xy:
-    bag = bag_of_words(pattern_sentence, all_words, True)
+    bag = word_vec(pattern_sentence, all_words)
     X_train.append(bag)
 
     label = tags.index(tag)
@@ -60,7 +60,7 @@ class ChatDataset(Dataset):
         return self.n_samples
     
 batch_size = 16
-hidden_size = 128
+hidden_size = 256
 output_size = len(tags)
 input_size = len(X_train[0])
 learning_rate = 0.001
@@ -76,11 +76,10 @@ train_loader = DataLoader(
     )
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-model = LSTM(input_size, hidden_size, output_size).to(device)
+model = LSTM(input_size, hidden_size, output_size, len(all_words)).to(device)
 
 criterion = nn.CrossEntropyLoss()
 optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)
-# optimizer = torch.optim.RMSprop(model.parameters(), lr=learning_rate)
 # optimizer = torch.optim.SGD(model.parameters(), lr=learning_rate, momentum=0.9)
 
 loss_values = []
@@ -90,26 +89,24 @@ for epoch in range(num_epochs):
 
     for (words, labels) in train_loader:
         words = words.to(device)
-        labels = labels.to(device)
-        # print(words)
-        # print(labels)
+        labels = labels.unsqueeze(1).to(device)
         # print(len(all_words))
         # print(words.shape)
 
         outputs = model(words)
         _, predictions = outputs.max(1)
-        num_correct += (predictions == labels).sum()
-        num_samples += predictions.size(0)
-        # print(epoch)
-        # print(outputs)
-        # print(outputs.shape)
-        # print(labels)
-        # print(labels.shape)
-        # print(predictions)
-        # print(predictions.shape)
+        # num_correct += (predictions == labels).sum()
+        # num_samples += predictions.size(0)
+        print(epoch)
+        print(outputs)
+        print(outputs.shape)
+        print(labels)
+        print(labels.shape)
+        print(predictions)
+        print(predictions.shape)
         # print(num_correct)
         # print(num_correct.shape)
-        # exit()
+        exit()
         loss = criterion(outputs, labels)
 
         optimizer.zero_grad()
@@ -118,18 +115,18 @@ for epoch in range(num_epochs):
 
         loss_values.append(loss.item())
 
-    # print((epoch+1))
-    # print(num_correct)
-    # print(num_samples)
-    # print(float(num_correct)/float(num_samples))
+    print((epoch+1))
+    print(num_correct)
+    print(num_samples)
+    print(float(num_correct)/float(num_samples))
     # exit()
     # if loss.item() <= min_error:
     #     break
 
-    if (epoch+1) % 10 == 0:
-        print(f'epoch {epoch+1}/{num_epochs}, loss={loss.item():.4f}, accuracy={float(num_correct)/float(num_samples)*100:.2f}')
+    # if (epoch+1) % 100 == 0:
+    print(f'epoch {epoch+1}/{num_epochs}, loss={loss.item():.4f}, accuracy={float(num_correct)/float(num_samples)*100:.2f}')
 
-# exit()
+exit()
 print(f'final loss={loss.item():.4f}')
 
 def check_accuracy(loader, model):
@@ -161,7 +158,7 @@ data = {
     "tags": tags
 }
 
-FILE = current_dir + '/data_lstm.pth'
+FILE = current_dir + '/data_lstm_embed.pth'
 torch.save(data, FILE)
 
 plt.plot(loss_values)

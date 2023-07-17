@@ -46,6 +46,14 @@ def bag_of_words(tokenized_sentence, all_words, is_without_stem=False):
     
     return bag
 
+def word_vec(tokenized_sentence, all_words):
+    bag = np.zeros(100, dtype=np.int32)
+    for idx, w in enumerate(tokenized_sentence):
+        if w in all_words:
+            bag[idx] = all_words.index(w)
+    
+    return bag
+
 def _neg_words():
     with open(current_dir + '/kamus/combined_neg_words.txt', 'r') as f:
         lines = f.readlines()    
